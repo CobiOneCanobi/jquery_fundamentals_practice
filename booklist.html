@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book List</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  var pageNode = document.getElementsByTagName('body')[0];
+
+  var books = [
+  {title: "Harry Potter",
+   author: "J.K. Rowling",
+   alreadyRead: true},
+  {title: "Lord of the Rings",
+   author: "J.R.R. Tolkien",
+   alreadyRead: false}
+  ];
+
+  for(var i = 0; i < books.length; i++){
+    var book = books[i];
+    var newParagraph = document.createElement('p');
+    var paragraphText = document.createTextNode(book.title + " by " + book.author);
+    newParagraph.appendChild(paragraphText);
+    pageNode.appendChild(newParagraph);
+  }
+</script>
+</html>
