@@ -1,0 +1,20 @@
+table, th, td{
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td{
+  height: 150px;
+  width: 150px;
+  font-size: 90px;
+  text-align: center;
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+#turn{
+  font-weight: bold;
+  font-size: 20px;
+}
